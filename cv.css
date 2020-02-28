@@ -73,12 +73,15 @@ h6,
 
 li {
   margin-bottom: .2em;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 dd {
   margin-bottom: .5em;
-  font-size: 16px;
+  font-size: 250px;
+}
+.lang__btn {
+  
 }
 .header {
   background-color: #dcdcdc;
@@ -108,23 +111,10 @@ dd {
   font-size: 14px;
   font-size: 0.8rem;
 }
-
 .section {
   margin-bottom: 3em;
 }
 .section-heading {
-  float: left;
-  width: 30%;
-  padding-right: 15%;
-  text-align: right;
-}
-.section-heading-rus {
-  float: left;
-  width: 30%;
-  padding-right: 15%;
-  text-align: right;
-}
-.section-heading-eng {
   float: left;
   width: 30%;
   padding-right: 15%;
@@ -137,13 +127,6 @@ dd {
 }
 .section-body {
   overflow: hidden;
-  font-size: 16px;
-  display: block;
-}
-.section-body-two {
-  overflow: hidden;
-  font-size: 16px;
-  display: none;
 }
 .experience__item {
   margin-bottom: 2em;
@@ -154,17 +137,10 @@ dd {
 .experience__role {
   font-style: italic;
 }
-.lang__btn {
-  text-align: center;
-}
-.lang_btn_eng:hover{
-  text-align: center;
-  transform: scale(1.1);
-}
-.lang_btn_rus:hover{
-  text-align: center;
-  transform: scale(1.1);
-}
-.vis {
- display: block;
+
+.ru_RU {
+  display: block;
+} 
+.en_US {
+  display: none;
 }

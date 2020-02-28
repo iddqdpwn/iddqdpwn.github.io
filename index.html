@@ -1,37 +1,75 @@
 <!DOCTYPE html>
 <html>
-<head lang="en">
+<head lang="ru">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="resources/css/cv.css">
     <title>Резюме Максима Цыганкова</title>
 </head>
 <body>
+	
     <div class="layout">
+    	<div style="text-align: center">
+    		
+    			<img id="eng_btn" onclick="changeLangToEng();" height="50px" class="lang__btn" src="http://img.freeflagicons.com/thumb/round_concave_icon/united_states_of_america/united_states_of_america_640.png">
+    		
+			
+				<img id="rus_btn" onclick="changeLangToRus();" height="50px" class="lang__btn" src="http://img.freeflagicons.com/thumb/round_concave_icon/russia/russia_640.png">
+			
+			
+		</div>
+
         <header class="header">
             <div class="person">
                 <img class="person__avatar" src="https://scontent-frt3-1.xx.fbcdn.net/v/t1.0-9/p960x960/36236439_1762212043845061_3580536968489992192_o.jpg?_nc_cat=102&_nc_sid=85a577&_nc_ohc=T3pQaa_pzAoAX-p0_R1&_nc_ht=scontent-frt3-1.xx&_nc_tp=6&oh=ce29a386a6871c449cd4624e1833197d&oe=5EF7174D">
-                <h1 class="person__name">Максим Цыганков</h1>
-                <h2 class="person__role">Junior Java Developer</h2>
+                <div id="rus_name" style="display: none">
+                	<h1 class="person__name" >Максим Цыганков</h1>
+                	<h2 class="person__role">Junior Java Developer</h2>
+                </div>
+                <div id="eng_name">
+                	<h1 class="person__name">Maxim Tsygankov</h1>
+                	<h2 class="person__role">Junior Java Developer</h2>
+                </div>
+                
             </div>
-            <ul class="links">
+            <ul class="links" id="rus_links" style="display: none">
                 <li class="links__item">Город: Иваново</li>
                 <li class="links__item">Телефон: +7(920)3656696</li>
+                <li class="links__item">Email: <a href="mailto:max.cygankov@yandex.com">max.cygankov@yandex.com</a></li>
+                <li class="links__item">GitHub: <a href="https://github.com/iddqdpwn">https://github.com/iddqdpwn</a></li>
+            </ul>
+            <ul class="links" id="eng_links">
+                <li class="links__item">City: Ivanovo</li>
+                <li class="links__item">Phone: +7(920)3656696</li>
                 <li class="links__item">Email: <a href="mailto:max.cygankov@yandex.com">max.cygankov@yandex.com</a></li>
                 <li class="links__item">GitHub: <a href="https://github.com/iddqdpwn">https://github.com/iddqdpwn</a></li>
             </ul>
         </header>
         <main class="content">
             <div class="section">
-                <h3 class="section-heading"><span class="section-heading__text">Обо мне</span></h3>
-                <div class="section-body">
+                <h3 id="eng_about" class="section-heading-eng">
+                	<span class="section-heading__text">Summary</span>
+            	</h3>
+            	<h3 id="rus_about" style="display: none" class="section-heading-rus">
+                	<span class="section-heading__text">Обо мне</span>
+            	</h3>            
+                <div id="rus_about_text" style="display: none" class="section-body-two">
                     Увлекаюсь IT сферой и разработкой программного обеспечения, ищу возможность 
 					стать частью команды опытных разработчиков, в которой я смогу начать свою карьеру
 					и расти как специалист.<br>
                 </div>
+                <div id="eng_about_text" class="section-body">
+                    Passionate about software engeneering and programming. Looking for opportunity as a junior software developer to become a member of experienced team so that I can develop my career and eventualy vecome a senior.<br>
+                </div>
             </div>
             <div class="section">
-                <h3 class="section-heading"><span class="section-heading__text">Навыки</span></h3>
-                <div class="section-body">
+                
+                <h3 id="eng_skills" class="section-heading-eng">
+                	<span class="section-heading__text">Skills</span>
+            	</h3>
+            	<h3 id="rus_skills" style="display: none" class="section-heading-rus">
+                	<span class="section-heading__text">Навыки</span>
+            	</h3>   
+                <div class="section-body" id="rus_skills_text" style="display: none">
                     <dl>
                         <dd>Java ( JDK 8, Gradle/Maven, JUnit ), опыт работы с JavaFX,  Android</dd>
 						<dd>SQL ( PostgreSQL, SQlite )
@@ -40,27 +78,56 @@
 						
                     </dl>
                 </div>
+                <div class="section-body" id="eng_skills_text">
+                    <dl>
+                        <dd>Java ( JDK 8, Gradle/Maven, JUnit ), experience with JavaFX,  Android</dd>
+						<dd>SQL ( PostgreSQL, SQlite )
+						<dd>Basic JavaScript
+						<dd>Tools: Git, IntelliJ IDEA</dd>
+						
+                    </dl>
+                    <br>
+                </div>
             </div>
             <div class="section">
-                <h3 class="section-heading"><span class="section-heading__text">Образование</span></h3>
+                
+                <h3 id="eng_edu" class="section-heading-eng">
+                	<span class="section-heading__text">Education</span>
+            	</h3>
+            	<h3 id="rus_edu" style="display: none" class="section-heading-rus">
+                	<span class="section-heading__text">Образование</span>
+            	</h3>  
                 <div class="section-body">
                     <div class="experience">
-                        <div class="experience__item">
-                            
+                        <div id="rus_edu_text" style="display: none" class="experience__item">                            
                                 <dd>2007—2012, Ивановский государственный химико-технологический университет</dd>
-                                <div class="experience__role">«Химической техники и Кибернетики»</div>
-                            
+                                <dd>Кафедра: "Химической Техники и Кибернетики"</dd>
+                                
+                        </div>
+                        <div id="eng_edu_text" class="experience__item">                            
+                                <dd>2007—2012, Ivanovo State University of Chemistry and Technology</dd>
+                                <dd>Department: "Chemical Engineering and Cybernetics"</dd>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="section">
-                <h3 class="section-heading"><span class="section-heading__text">Языки</span></h3>
-                <div class="section-body">
+                
+                <h3 id="eng_lang" class="section-heading-eng">
+                	<span class="section-heading__text">Languages</span>
+            	</h3>
+            	<h3 id="rus_lang" style="display: none" class="section-heading-rus">
+                	<span class="section-heading__text">Языки</span>
+            	</h3>  
+                <div id="eng_lang_text" class="section-body">
+                    <p>English — Intermediate</p>
+                </div>
+                <div id="rus_lang_text" style="display: none"class="section-body">
                     <p>Английский — Intermediate</p>
                 </div>
             </div>
         </main>
     </div>
 </body>
+<script type="text/javascript" src="resources/js/javascript.js"></script>
 </html>
