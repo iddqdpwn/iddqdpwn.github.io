@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font: 16px 'Helvetica Neue', 'Roboto', Helvetica, Arial;
+}
+.layout {
+
+  width: 900px;
+  margin-left: 1%;
+  padding: 2em 0;
+}
+
+a {
+  color: #039fc9;
+}
+a:hover {
+  color: #f27d2c;
+}
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+  font-weight: 300;
+}
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  line-height: 1.2;
+}
+h1,
+.h1 {
+  font-size: 49px;
+  font-size: 3rem;
+}
+h2,
+.h2 {
+  font-size: 33px;
+  font-size: 2rem;
+}
+h3,
+.h3 {
+  font-size: 25px;
+  font-size: 1.5rem;
+}
+h4,
+.h4 {
+  font-size: 17px;
+  font-size: 1rem;
+}
+h5,
+.h5 {
+  font-size: 17px;
+  font-size: 1rem;
+}
+h6,
+.h6 {
+  font-size: 15px;
+  font-size: 0.85rem;
+}
+
+li {
+  margin-bottom: .2em;
+  font-size: 15px;
+}
+
+dd {
+  margin-bottom: .5em;
+}
+.header {
+  background-color: #dcdcdc;
+  margin-bottom: 5em;
+  padding-left: 10%;
+  height: 253px;
+}
+.person {
+  margin-bottom: 1em;
+}
+.person__avatar {
+  float: right;
+  max-width: 253px;
+  margin-top: 0rem;
+}
+.person__name {
+  padding-top: .5em;
+  text-indent: 2px;
+}
+.person__role {
+  font-size: 257px;
+  font-size: 1.5rem;
+}
+.links {
+  margin: 0;
+  list-style: none;
+  font-size: 14px;
+  font-size: 0.8rem;
+}
+
+.section {
+  margin-bottom: 3em;
+}
+.section-heading {
+  float: left;
+  width: 30%;
+  padding-right: 15%;
+  text-align: right;
+}
+.section-heading__text {
+  display: inline-block;
+  padding-bottom: .25em;
+  border-bottom: 5px solid #eeeeee;
+}
+.section-body {
+  overflow: hidden;
+}
+.experience__item {
+  margin-bottom: 2em;
+}
+.experience__period {
+  font-weight: 700;
+}
+.experience__role {
+  font-style: italic;
+}
