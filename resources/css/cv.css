@@ -3,15 +3,8 @@
   padding: 0;
 }
 body {
-  font: 16px 'Helvetica Neue', 'Roboto', Helvetica, Arial;
+  font: 16px Roboto, Arial;
 }
-.layout {
-
-  width: 900px;
-  margin-left: 1%;
-  padding: 2em 0;
-}
-
 a {
   color: #039fc9;
 }
@@ -75,10 +68,15 @@ li {
   margin-bottom: .2em;
   font-size: 16px;
 }
-
 dd {
   margin-bottom: .5em;
   font-size: 16px;
+}
+.layout {
+
+  width: 900px;
+  margin-left: 1%;
+  padding: 2em 0;
 }
 .header {
   background-color: #dcdcdc;
@@ -96,10 +94,8 @@ dd {
 }
 .person__name {
   padding-top: .5em;
-  text-indent: 2px;
 }
 .person__role {
-  font-size: 257px;
   font-size: 1.5rem;
 }
 .links {
@@ -108,63 +104,33 @@ dd {
   font-size: 14px;
   font-size: 0.8rem;
 }
-
 .section {
   margin-bottom: 3em;
 }
 .section-heading {
   float: left;
-  width: 30%;
-  padding-right: 15%;
-  text-align: right;
-}
-.section-heading-rus {
-  float: left;
-  width: 30%;
-  padding-right: 15%;
-  text-align: right;
-}
-.section-heading-eng {
-  float: left;
-  width: 30%;
-  padding-right: 15%;
+  width: 25%;
+  padding-right: 10%;
   text-align: right;
 }
 .section-heading__text {
   display: inline-block;
   padding-bottom: .25em;
-  border-bottom: 5px solid #eeeeee;
+  border-bottom: 5px solid #dcdcdc;
 }
 .section-body {
   overflow: hidden;
   font-size: 16px;
   display: block;
 }
-.section-body-two {
-  overflow: hidden;
-  font-size: 16px;
-  display: none;
-}
 .experience__item {
   margin-bottom: 2em;
 }
-.experience__period {
-  font-weight: 700;
-}
-.experience__role {
-  font-style: italic;
-}
-.lang__btn {
-  text-align: center;
-}
 .lang_btn_eng:hover{
   text-align: center;
-  transform: scale(1.1);
+  transform: scale(1.4);
 }
 .lang_btn_rus:hover{
   text-align: center;
-  transform: scale(1.1);
-}
-.vis {
- display: block;
+  transform: scale(1.4);
 }
